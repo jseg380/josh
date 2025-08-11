@@ -1,0 +1,15 @@
+Hover:
+  ShowAKA: true
+InlayHints:
+  Enabled: true
+  ParameterNames: true
+  DefaultArguments: true
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: None
+CompileFlags:
+  Add: 
+    - -I.
+    - -Wall
+    - -xc-header
+  
