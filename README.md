@@ -1,6 +1,6 @@
-# jsh
+# josh - jseg380's own shell
 
-**jsh** is a simple, modern, and educational Unix shell written in pure C. This project was developed as a deep dive into systems programming, memory management, and the core components of how a command-line interface interacts with an operating system.
+**josh** is a simple, modern, and educational Unix shell written in pure C. This project was developed as a deep dive into systems programming, memory management, and the core components of how a command-line interface interacts with an operating system.
 
 It is built with a focus on clean, modular, and maintainable code, demonstrating key software architecture principles in a C environment.
 
@@ -26,11 +26,11 @@ It is built with a focus on clean, modular, and maintainable code, demonstrating
 
 ### Building
 
-To build the `jsh` executable, simply clone the repository and run `make`:
+To build the `josh` executable, simply clone the repository and run `make`:
 
 ```bash
-git clone https://github.com/jseg380/jsh.git
-cd jsh
+git clone https://github.com/jseg380/josh.git
+cd josh
 make
 ```
 
@@ -39,7 +39,7 @@ make
 To start the shell, run the compiled binary:
 
 ```bash
-./jsh
+./josh
 ```
 
 ---

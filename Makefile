@@ -13,7 +13,7 @@ CFLAGS = -Wall -Wextra -g -std=gnu99
 LDFLAGS = -lm
 
 # The name of our final executable
-TARGET = jsh
+TARGET = josh
 
 # Find all .c source files in the current directory
 SRCS = $(wildcard *.c)
