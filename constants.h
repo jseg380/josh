@@ -1,5 +1,5 @@
-#ifndef MYSHELL_CONSTANTS_H
-#define MYSHELL_CONSTANTS_H
+#ifndef JOSHELL_CONSTANTS_H
+#define JOSHELL_CONSTANTS_H
 
 // --- Compile-Time Constants (Self-Contained Values) ---
 // Use `static const` for simple, literal-like values.
@@ -13,8 +13,8 @@ static const char *DEFAULT_PATH_RAW = "/";
 // static const int MAX_INPUT_BUFFER_SIZE = 4096;
 
 // --- Default Identifiers ---
-static const char *DEFAULT_PROMPT_OPENING = "myshell";
+static const char *DEFAULT_PROMPT_OPENING = "josh";
 static const char *DEFAULT_PROMPT_CLOSING = " -> ";
-// static const char* CONFIG_FILENAME = ".myshellrc";
+// static const char* CONFIG_FILENAME = ".joshrc";
 
-#endif // !MYSHELL_CONSTANTS_H
+#endif // !JOSHELL_CONSTANTS_H

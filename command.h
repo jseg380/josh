@@ -1,5 +1,5 @@
-#ifndef MYSHELL_COMMAND_H
-#define MYSHELL_COMMAND_H
+#ifndef JOSHELL_COMMAND_H
+#define JOSHELL_COMMAND_H
 
 #include <sys/types.h> // For uint
 

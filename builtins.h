@@ -1,4 +1,4 @@
-#ifndef MYSHELL_BUILTINS_H
+#ifndef JOSHELL_BUILTINS_H
 
 #include "command.h" // For CommandResult
 #include <stdbool.h> // For bool
@@ -36,4 +36,4 @@ CommandResult builtin_execute(const ParsedInput *parsed_command, char *output_bu
  */
 CommandResult builtin_execute_empty(void);
 
-#endif // !MYSHELL_BUILTINS_H
+#endif // !JOSHELL_BUILTINS_H

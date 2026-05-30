@@ -1,5 +1,5 @@
-#ifndef MYSHELL_PATH_H
-#define MYSHELL_PATH_H
+#ifndef JOSHELL_PATH_H
+#define JOSHELL_PATH_H
 
 #include <stdbool.h>
 #include <sys/types.h>
@@ -67,4 +67,4 @@ bool path_set(Path *path, const char *raw);
  */
 void path_update_cwd(Path *path);
 
-#endif // !MYSHELL_PATH_H
+#endif // !JOSHELL_PATH_H

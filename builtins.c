@@ -168,7 +168,7 @@ CommandResult builtin_cd(int argc, char *argv[], char *output_buffer, size_t buf
         if (path_to_change_to == NULL)
         {
             // In the rare case that the HOME variable isn't set.
-            fprintf(stderr, "myshell: cd: HOME not set\n");
+            fprintf(stderr, "josh: cd: HOME not set\n");
             return 1; // Return failure
         }
     }
@@ -180,7 +180,7 @@ CommandResult builtin_cd(int argc, char *argv[], char *output_buffer, size_t buf
     else if (argc > 1)
     {
         // Case: User typed "cd path1 path2" or more. This is an error.
-        fprintf(stderr, "myshell: cd: too many arguments\n");
+        fprintf(stderr, "josh: cd: too many arguments\n");
         return 1; // Return failure
     }
 
@@ -194,7 +194,7 @@ CommandResult builtin_cd(int argc, char *argv[], char *output_buffer, size_t buf
         // perror() is the perfect tool to print a descriptive error message.
         // It will print our string, followed by a system error like
         // "No such file or directory".
-        perror("myshell: cd");
+        perror("josh: cd");
         return 1; // Return failure
     }
 
@@ -204,7 +204,7 @@ CommandResult builtin_cd(int argc, char *argv[], char *output_buffer, size_t buf
     Path *cwd = path_create_from_cwd();
     if (setenv("PWD", path_get_raw(cwd), 1) != 0)
     {
-        perror("myshell: cd, updating PWD");
+        perror("josh: cd, updating PWD");
         return 1; // Return failure
     }
     // Destroy the path we created, memory leak if this is skipped

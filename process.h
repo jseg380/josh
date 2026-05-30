@@ -1,5 +1,5 @@
-#ifndef MYSHELL_PROCESS_H
-#define MYSHELL_PROCESS_H
+#ifndef JOSHELL_PROCESS_H
+#define JOSHELL_PROCESS_H
 
 #include "command.h" // For ParsedInput, CommandResult
 

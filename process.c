@@ -18,14 +18,14 @@ CommandResult launch_process(const ParsedInput *parsed_input, char *output_buffe
         if (execvp(parsed_input->arguments[0], parsed_input->arguments) == -1)
         {
             // execvp only returns if an error occurred.
-            perror("myshell");
+            perror("josh");
             exit(EXIT_FAILURE); // VERY IMPORTANT: Terminate the child process.
         }
     }
     else if (pid < 0)
     {
         // --- Forking error ---
-        perror("myshell");
+        perror("josh");
         return -1; // Indicate a failure to launch.
     }
 
@@ -37,7 +37,7 @@ CommandResult launch_process(const ParsedInput *parsed_input, char *output_buffe
     // has either exited or been killed.
     if (waitpid(pid, &status, 0) == -1)
     {
-        perror("myshell: waitpid failed");
+        perror("josh: waitpid failed");
         return -1; // Return a failure code.
     }
 

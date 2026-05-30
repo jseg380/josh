@@ -1,5 +1,5 @@
-#ifndef MYSHELL_CONFIG_H
-#define MYSHELL_CONFIG_H
+#ifndef JOSHELL_CONFIG_H
+#define JOSHELL_CONFIG_H
 
 // --- Compile-Time Constants (Self-Contained Values) ---
 // Use `static const` for simple, literal-like values.
@@ -9,11 +9,11 @@
 /**
  * @brief Initial message displayed when the shell starts
  */
-static const char *INIT_MESSAGE = "Welcome to MyShell!";
+static const char *INIT_MESSAGE = "Welcome to JoSH!";
 
 /**
  * @brief Exit message displayed when the shell exits
  */
-static const char *EXIT_MESSAGE = "Exiting MyShell...";
+static const char *EXIT_MESSAGE = "Exiting JoSH...";
 
-#endif // !MYSHELL_CONFIG_H
+#endif // !JOSHELL_CONFIG_H
